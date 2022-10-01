@@ -81,8 +81,8 @@ class MoneyTransferTest {
         int actual1 = dashboardPage.getCardBalance("1");
         int actual2 = dashboardPage.getCardBalance("2");
 
-        assertEquals(expected1, actual1);
-        assertEquals(expected2, actual2);
+        assertNotEquals(expected1, actual1);
+        assertNotEquals(expected2, actual2);
     }
 }
 
