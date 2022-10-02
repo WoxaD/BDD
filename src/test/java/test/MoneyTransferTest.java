@@ -77,6 +77,7 @@ class MoneyTransferTest {
         dashboardPage.getMoneyTransferFromFirstToSecond();
         var moneyTransferPage = new MoneyTransferPage();
         moneyTransferPage.moneyTransfer(DataHelper.getCardInfo("1"), balance);
+        moneyTransferPage.getError();
 
         int actual1 = dashboardPage.getCardBalance("1");
         int actual2 = dashboardPage.getCardBalance("2");
